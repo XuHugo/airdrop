@@ -21,7 +21,7 @@ interface Token {
 
 contract Airdropper is Ownable {
     
-    function batchTransfer(address[] _recipients, uint _values, address _tokenAddress) onlyOwner public returns (bool) {
+    function AirTransfer(address[] _recipients, uint _values, address _tokenAddress) onlyOwner public returns (bool) {
         require(_recipients.length > 0);
 
         Token token = Token(_tokenAddress);
